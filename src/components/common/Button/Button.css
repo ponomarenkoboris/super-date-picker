@@ -1,0 +1,37 @@
+.custom-button {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 2px -1px rgb(54 97 126 / 30%);
+}
+
+.outline {
+    color: #006BB4;
+    background-color: #fff;
+    border: 1px solid #006BB4;
+}
+
+.outline:hover {
+    box-shadow: 0 4px 8px 0 rgb(54 97 126 / 15%), 
+        0 2px 2px -1px rgb(54 97 126 / 30%);
+    background-color: rgba(0, 107, 180, 0.1);
+}
+
+.main {
+    color: #fff;
+    background-color: #006BB4;
+    border: none;
+}
+
+.main:hover {
+    text-decoration: underline;
+    transform: translateY(-1px);
+}

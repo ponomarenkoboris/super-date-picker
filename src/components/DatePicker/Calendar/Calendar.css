@@ -1,0 +1,75 @@
+.calendar {
+    width: 283px;
+    height: auto;
+}
+
+.calendar__month {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.month__controller {
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-image: url('../../../assets/chevron.svg');
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 7px;
+    border: none;
+}
+.month__controller:hover {
+    background-color: #F5F7FA;
+    box-shadow: 0 0 0 2px #f5f7fa;
+    transform: scale(1.2);
+}
+.month__controller:first-child {
+    transform: rotate(180deg);
+}
+.month__controller:first-child:hover {
+    transform: scale(1.2) rotate(180deg);
+}
+.days__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.days__item {
+    padding: 1px 6px;
+    cursor: default;
+}
+.days-of-week__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.days-column {
+    display: flex;
+    flex-direction: column;
+    height: 144px;
+}
+.day {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 6px;
+    outline: none;
+    border: none;
+    background: none;
+    transition: transform, font-weight, text-decoration 200ms linear;
+}
+.day:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    transform: scale(1.3);
+}
+.day_chosen {
+    font-weight: bold;
+    text-decoration: underline;
+    transform: scale(1.3);
+}

@@ -1,0 +1,97 @@
+.super-date-picker {
+    position: relative;
+    display: flex;
+    background-color: #fbfcfd;
+    align-items: stretch;
+    padding: 1px;
+    height: 40px;
+    color: #343741;
+    box-shadow: 0 1px 1px -1px rgb(152 162 179 / 20%), 0 3px 2px -2px rgb(152 162 179 / 20%), inset 0 0 0 1px rgb(15 39 118 / 10%);
+}
+.quick-selector__drop-controller {
+    height: 100%;
+    font-size: 14px;
+    color: #006BB4;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    border-right: 1px solid #e4e8ee;
+    transition: background-color 200ms linear;
+}
+.quick-selector__drop-controller:active {
+    background-color: rgba(0, 107, 180, 0.1);
+}
+.choosen-date-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    transition: background-color 200ms linear;
+}
+.choosen-date-wrapper:active {
+    background-color: rgba(0, 107, 180, 0.1);
+}
+.choosen-date {
+    box-sizing: border-box;
+    padding: 0  10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.choosen-date__subtitle {
+    color: #006BB4;
+    cursor: pointer;
+}
+.choosen-date__subtitle:hover {
+    text-decoration: underline;
+}
+
+.picker__relative-time {
+    box-sizing: border-box;
+    padding: 0  10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.picker__subtitle {
+    color: #006BB4;
+    cursor: pointer;
+}
+.picker__subtitle:hover {
+    text-decoration: underline;
+}
+
+.absolute-dates {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.absolute-dates {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.picked-start-date,
+.picked-end-date {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 45%;
+    background-color: hsl(210, 7%, 79%);
+}
+
+.picked-start-date > p,
+.picked-end-date > p {
+    margin: 0;
+}
